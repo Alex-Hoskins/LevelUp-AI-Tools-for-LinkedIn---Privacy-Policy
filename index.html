@@ -23,59 +23,92 @@
 <body>
 
   <h1>Privacy Policy for LevelUp: AI Tools for LinkedIn</h1>
-  <p><strong>Effective Date:</strong> May 19, 2025</p>
+  <p><strong>Effective Date:</strong> March 19, 2026</p>
 
   <h2>1. Introduction</h2>
   <p>
     LevelUp: AI Tools for LinkedIn ("the Extension", "we", "us", or "our") is a browser extension
     designed to help users create, improve, and manage LinkedIn content and messages using AI-powered tools.
-    We are committed to protecting your privacy and ensuring transparency about how your information is handled.
+    We are committed to protecting your privacy and being transparent about how your information is handled.
   </p>
 
   <h2>2. Data Collection</h2>
-  <p>We do <strong>NOT</strong> collect, transmit, or store any personal data or LinkedIn data on our servers.
-    All data processed by the extension remains on your device.
+  <p>
+    We collect <strong>limited, anonymous usage data</strong> to improve the extension. We do <strong>not</strong> collect
+    personally identifiable information (PII), message content, resume data, or sensitive LinkedIn data.
   </p>
   <ul>
-    <li><strong>OpenAI API Key:</strong> Your API key is stored securely in your browser's local storage (or Chrome extension storage) and is never sent to any external server other than OpenAI's API, as required for generating content.</li>
-    <li><strong>Message History & Preferences:</strong> Any message history, settings, or preferences are stored locally in your browser and are not transmitted to us or any third party.</li>
-    <li><strong>LinkedIn Data:</strong> The extension only accesses LinkedIn profile information (name and position) when you explicitly use the auto-generate feature. This data is used solely to populate message templates and is not stored or transmitted to any external servers.</li>
+    <li><strong>Anonymous Usage Data:</strong> We collect anonymized analytics events (such as extension opened or feature used) to understand product usage and improve functionality. This data cannot be used to identify you.</li>
+
+    <li><strong>OpenAI API Key:</strong> Your API key is stored only in your browser using Chrome local storage. It is never transmitted to LevelUp or any third-party server.</li>
+
+    <li><strong>Local Storage Data:</strong> Your message history, resume text, templates, preferences, and profile-related data are stored exclusively on your device and are never transmitted to our servers.</li>
+
+    <li><strong>LinkedIn Data (Read-Only, On-Demand):</strong>
+      <ul>
+        <li>Name and headline from profile pages are accessed only when needed to auto-fill templates and are not stored.</li>
+        <li>Job description text is accessed only when you click "Send to LevelUp" and is stored temporarily in your browser until the Resume Analyzer loads it.</li>
+        <li>The last received message is accessed only when you click "Generate Reply" and is stored temporarily in your browser until the AI Reply feature loads it.</li>
+      </ul>
+    </li>
   </ul>
 
-  <h2>3. Use of Permissions</h2>
+  <h2>3. How AI Features Work</h2>
+  <ul>
+    <li>All AI requests are sent directly from your browser to OpenAI using your API key.</li>
+    <li>LevelUp does not act as a proxy and does not see, store, or log your prompts or AI responses.</li>
+  </ul>
+
+  <h2>4. Analytics</h2>
+  <p>
+    We use <strong>PostHog</strong> to collect anonymous usage analytics to improve the extension.
+  </p>
+  <ul>
+    <li>Analytics data is aggregated and anonymized.</li>
+    <li>No personally identifiable information is collected.</li>
+    <li>No message content, LinkedIn data, resume data, or API keys are included in analytics tracking.</li>
+    <li>No advertising networks are used.</li>
+    <li>Your data is never sold.</li>
+  </ul>
+
+  <h2>5. Use of Permissions</h2>
   <p>The extension requests only the minimum permissions necessary for its features:</p>
   <ul>
-    <li><strong>scripting:</strong> Required to extract profile information from LinkedIn pages and enable the auto-generate feature for message templates.</li>
-    <li><strong>tabs:</strong> Required to detect when you're on a LinkedIn profile page and automatically populate message fields with the person's name and position.</li>
-    <li><strong>storage:</strong> To save your settings, API key, and message history locally.</li>
-    <li><strong>contextMenus:</strong> To provide right-click menu options for generating replies (optional permission).</li>
-    <li><strong>sidePanel:</strong> To display the extension's interface in a side panel.</li>
-    <li><strong>activeTab:</strong> To interact with the currently active tab for context menu actions.</li>
+    <li><strong>scripting:</strong> Required to read LinkedIn page content for user-triggered features.</li>
+    <li><strong>tabs:</strong> Required to detect when you're on relevant LinkedIn pages.</li>
+    <li><strong>storage:</strong> To save your data locally in your browser.</li>
+    <li><strong>contextMenus:</strong> To provide right-click actions for generating content.</li>
+    <li><strong>sidePanel:</strong> To display the extension interface.</li>
+    <li><strong>activeTab:</strong> To interact with the current page when you trigger a feature.</li>
   </ul>
 
-  <h2>4. Third-Party Services</h2>
+  <h2>6. Third-Party Services</h2>
   <p>
-    <strong>OpenAI:</strong> When you use the AI features, your content and API key are sent directly from your device
-    to OpenAI's API for processing. Please review <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">OpenAI's Privacy Policy</a> for more information.
+    <strong>OpenAI:</strong> AI features send requests directly to OpenAI from your browser. Please review
+    <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">OpenAI's Privacy Policy</a>.
+  </p>
+  <p>
+    <strong>PostHog:</strong> Used for anonymous analytics tracking as described above.
   </p>
 
-  <h2>5. Data Security</h2>
+  <h2>7. Data Security</h2>
   <ul>
-    <li>Your API key and data are stored only in your browser and are never shared with us or any third party (except OpenAI, as described above).</li>
-    <li>We do not have access to your data at any time.</li>
-    <li>All LinkedIn data accessed by the extension is used only for the immediate purpose of generating messages and is not stored or transmitted.</li>
+    <li>All user data is stored locally on your device.</li>
+    <li>We do not have access to your personal data, message content, or API keys.</li>
+    <li>Anonymous analytics data may be collected as described above.</li>
+    <li>No LinkedIn data is transmitted to our servers.</li>
   </ul>
 
-  <h2>6. Changes to This Policy</h2>
+  <h2>8. Changes to This Policy</h2>
   <p>
     We may update this privacy policy from time to time. Any changes will be posted within the extension or on the extension's listing page.
     Your continued use of the extension after changes are posted constitutes your acceptance of the updated policy.
   </p>
 
-  <h2>7. Contact</h2>
+  <h2>9. Contact</h2>
   <p>
-    If you have any questions or concerns about this privacy policy or the extension's data practices,
-    please contact us via the support form linked in the extension's settings.
+    If you have any questions or concerns about this privacy policy or data practices,
+    please contact us via the support form linked in the extension.
   </p>
 
   <p>
