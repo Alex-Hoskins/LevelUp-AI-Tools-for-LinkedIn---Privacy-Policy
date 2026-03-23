@@ -3,117 +3,187 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy | LevelUp: AI Tools for LinkedIn</title>
+  <title>Privacy Policy | Aria</title>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      padding: 2rem;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: #f8f9fa;
+      color: #374151;
+    }
+
+    .container {
       max-width: 800px;
-      margin: auto;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 10px;
+      border: 1.5px solid #e0e4ea;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
-    h1, h2 {
-      color: #333;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 800;
+      font-size: 20px;
+      color: #0f2942;
+      margin-bottom: 20px;
     }
+
+    .logo svg {
+      width: 20px;
+      height: 20px;
+      color: #059669;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 18px;
+      color: #0f2942;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 14px;
+      color: #374151;
+    }
+
     ul {
-      padding-left: 1.5rem;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      font-size: 14px;
+      color: #374151;
+    }
+
+    .date {
+      font-size: 13px;
+      color: #6b7280;
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: #059669;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <h1>Privacy Policy for LevelUp: AI Tools for LinkedIn</h1>
-  <p><strong>Effective Date:</strong> March 19, 2026</p>
+  <div class="container">
 
-  <h2>1. Introduction</h2>
-  <p>
-    LevelUp: AI Tools for LinkedIn ("the Extension", "we", "us", or "our") is a browser extension
-    designed to help users create, improve, and manage LinkedIn content and messages using AI-powered tools.
-    We are committed to protecting your privacy and being transparent about how your information is handled.
-  </p>
+    <div class="logo">
+      <svg viewBox="0 0 32 32" fill="currentColor">
+        <path d="M16 2 L19.5 12.5 L30 16 L19.5 19.5 L16 30 L12.5 19.5 L2 16 L12.5 12.5 Z"/>
+      </svg>
+      Aria
+    </div>
 
-  <h2>2. Data Collection</h2>
-  <p>
-    We collect <strong>limited, anonymous usage data</strong> to improve the extension. We do <strong>not</strong> collect
-    personally identifiable information (PII), message content, resume data, or sensitive LinkedIn data.
-  </p>
-  <ul>
-    <li><strong>Anonymous Usage Data:</strong> We collect anonymized analytics events (such as extension opened or feature used) to understand product usage and improve functionality. This data cannot be used to identify you.</li>
+    <h1>Privacy Policy</h1>
+    <div class="date"><strong>Effective Date:</strong> March 19, 2026</div>
 
-    <li><strong>OpenAI API Key:</strong> Your API key is stored only in your browser using Chrome local storage. It is never transmitted to LevelUp or any third-party server.</li>
+    <h2>1. Introduction</h2>
+    <p>
+      Aria ("the Extension", "we", "us", or "our") is a browser extension
+      designed to help users create, improve, and manage professional content and messages using AI-powered tools.
+      We are committed to protecting your privacy and being transparent about how your information is handled.
+    </p>
 
-    <li><strong>Local Storage Data:</strong> Your message history, resume text, templates, preferences, and profile-related data are stored exclusively on your device and are never transmitted to our servers.</li>
+    <h2>2. Data Collection</h2>
+    <p>
+      We collect <strong>limited, anonymous usage data</strong> to improve the extension. We do <strong>not</strong> collect
+      personally identifiable information (PII), message content, resume data, or sensitive platform data.
+    </p>
+    <ul>
+      <li><strong>Anonymous Usage Data:</strong> We collect anonymized analytics events (such as extension opened or feature used) to understand product usage and improve functionality.</li>
 
-    <li><strong>LinkedIn Data (Read-Only, On-Demand):</strong>
-      <ul>
-        <li>Name and headline from profile pages are accessed only when needed to auto-fill templates and are not stored.</li>
-        <li>Job description text is accessed only when you click "Send to LevelUp" and is stored temporarily in your browser until the Resume Analyzer loads it.</li>
-        <li>The last received message is accessed only when you click "Generate Reply" and is stored temporarily in your browser until the AI Reply feature loads it.</li>
-      </ul>
-    </li>
-  </ul>
+      <li><strong>OpenAI API Key:</strong> Your API key is stored only in your browser using Chrome local storage. It is never transmitted to Aria or any third-party server.</li>
 
-  <h2>3. How AI Features Work</h2>
-  <ul>
-    <li>All AI requests are sent directly from your browser to OpenAI using your API key.</li>
-    <li>LevelUp does not act as a proxy and does not see, store, or log your prompts or AI responses.</li>
-  </ul>
+      <li><strong>Local Storage Data:</strong> Your message history, resume text, templates, preferences, and profile-related data are stored exclusively on your device.</li>
 
-  <h2>4. Analytics</h2>
-  <p>
-    We use <strong>PostHog</strong> to collect anonymous usage analytics to improve the extension.
-  </p>
-  <ul>
-    <li>Analytics data is aggregated and anonymized.</li>
-    <li>No personally identifiable information is collected.</li>
-    <li>No message content, LinkedIn data, resume data, or API keys are included in analytics tracking.</li>
-    <li>No advertising networks are used.</li>
-    <li>Your data is never sold.</li>
-  </ul>
+      <li><strong>Platform Data (Read-Only, On-Demand):</strong>
+        <ul>
+          <li>Name and headline are accessed only when needed to auto-fill templates and are not stored.</li>
+          <li>Job descriptions are accessed only when you trigger relevant features and are stored temporarily in your browser.</li>
+          <li>Messages are accessed only when you request AI-generated replies and are stored temporarily.</li>
+        </ul>
+      </li>
+    </ul>
 
-  <h2>5. Use of Permissions</h2>
-  <p>The extension requests only the minimum permissions necessary for its features:</p>
-  <ul>
-    <li><strong>scripting:</strong> Required to read LinkedIn page content for user-triggered features.</li>
-    <li><strong>tabs:</strong> Required to detect when you're on relevant LinkedIn pages.</li>
-    <li><strong>storage:</strong> To save your data locally in your browser.</li>
-    <li><strong>contextMenus:</strong> To provide right-click actions for generating content.</li>
-    <li><strong>sidePanel:</strong> To display the extension interface.</li>
-    <li><strong>activeTab:</strong> To interact with the current page when you trigger a feature.</li>
-  </ul>
+    <h2>3. How AI Features Work</h2>
+    <ul>
+      <li>All AI requests are sent directly from your browser to OpenAI using your API key.</li>
+      <li>Aria does not act as a proxy and does not see, store, or log your prompts or responses.</li>
+    </ul>
 
-  <h2>6. Third-Party Services</h2>
-  <p>
-    <strong>OpenAI:</strong> AI features send requests directly to OpenAI from your browser. Please review
-    <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">OpenAI's Privacy Policy</a>.
-  </p>
-  <p>
-    <strong>PostHog:</strong> Used for anonymous analytics tracking as described above.
-  </p>
+    <h2>4. Analytics</h2>
+    <p>
+      We use <strong>PostHog</strong> to collect anonymous usage analytics.
+    </p>
+    <ul>
+      <li>Analytics data is aggregated and anonymized.</li>
+      <li>No personally identifiable information is collected.</li>
+      <li>No message content, platform data, resume data, or API keys are included.</li>
+      <li>No advertising networks are used.</li>
+      <li>Your data is never sold.</li>
+    </ul>
 
-  <h2>7. Data Security</h2>
-  <ul>
-    <li>All user data is stored locally on your device.</li>
-    <li>We do not have access to your personal data, message content, or API keys.</li>
-    <li>Anonymous analytics data may be collected as described above.</li>
-    <li>No LinkedIn data is transmitted to our servers.</li>
-  </ul>
+    <h2>5. Use of Permissions</h2>
+    <ul>
+      <li><strong>scripting:</strong> Read page content for user-triggered features.</li>
+      <li><strong>tabs:</strong> Detect relevant pages.</li>
+      <li><strong>storage:</strong> Save data locally.</li>
+      <li><strong>contextMenus:</strong> Provide right-click actions.</li>
+      <li><strong>sidePanel:</strong> Display the interface.</li>
+      <li><strong>activeTab:</strong> Interact with the current page when triggered.</li>
+    </ul>
 
-  <h2>8. Changes to This Policy</h2>
-  <p>
-    We may update this privacy policy from time to time. Any changes will be posted within the extension or on the extension's listing page.
-    Your continued use of the extension after changes are posted constitutes your acceptance of the updated policy.
-  </p>
+    <h2>6. Third-Party Services</h2>
+    <p>
+      <strong>OpenAI:</strong> AI features send requests directly from your browser.
+      <a href="https://openai.com/policies/privacy-policy" target="_blank">View Privacy Policy</a>.
+    </p>
+    <p>
+      <strong>PostHog:</strong> Used for anonymous analytics tracking.
+    </p>
 
-  <h2>9. Contact</h2>
-  <p>
-    If you have any questions or concerns about this privacy policy or data practices,
-    please contact us via the support form linked in the extension.
-  </p>
+    <h2>7. Data Security</h2>
+    <ul>
+      <li>All user data is stored locally on your device.</li>
+      <li>We do not have access to your personal data or API keys.</li>
+      <li>No platform data is transmitted to our servers.</li>
+    </ul>
 
-  <p>
-    By using LevelUp: AI Tools for LinkedIn, you agree to this privacy policy.
-  </p>
+    <h2>8. Changes to This Policy</h2>
+    <p>
+      We may update this policy from time to time. Continued use of the extension constitutes acceptance of updates.
+    </p>
+
+    <h2>9. Contact</h2>
+    <p>
+      If you have questions, please contact us via the support link in the extension.
+    </p>
+
+    <p>
+      By using Aria, you agree to this privacy policy.
+    </p>
+
+  </div>
 
 </body>
 </html>
